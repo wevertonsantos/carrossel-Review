@@ -37,15 +37,29 @@ btnDireita.addEventListener('click', function(){
 })
 
 function pegaDados(){
-    pessoas.forEach((pessoaAtual) => {
-    nome.textContent = pessoaAtual.nome
-    cargo.textContent = pessoaAtual.cargo
-    resumo.textContent = pessoaAtual.resumo
+    pessoas.forEach((pessoaAtual, indice) => {
+    
+        console.log(indice)
+    if(indice == 1){
+        nome.textContent = pessoaAtual.nome
+        cargo.textContent = pessoaAtual.cargo
+        resumo.textContent = pessoaAtual.resumo
+        }
+    })
+}    
 
-    console.log(pessoaAtual.nome)
-    console.log(pessoaAtual.cargo)
-     })
+function pegaDados1(){
+    let i = 0
+
+    while(i < pessoas.length){
+        i++
+    }
+
+    nome.textContent = pessoas[1].nome
+    nome.textContent = pessoas[2].nome
+
 }
+
 
    // let pessoa = '';
 
