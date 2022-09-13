@@ -1,24 +1,24 @@
 let pessoas = [{
     nome:"Amanda Silverio",
-    img:"/img/mulhertrabalho.jpg",
+    img:"https://thumbs.dreamstime.com/b/uma-mulher-trabalhando-com-computador-para-projetar-e-programar-mulheres-157948365.jpg",
     cargo:"WEB DEVELOPER",
     resumo:"Programa, codifica e testa sistemas, sites e portais voltados para o ambiente da internet. Executa a manutenção dos sistemas, fazendo eventuais correções necessárias, visando atender às necessidades dos usuários."
 },
 {
     nome:"Juliano Paiva",
-    img:"/img/homemfelizlaptop.jpg",
+    img:"https://www.brasilcode.com.br/wp-content/uploads/2020/09/Computador-Para-Programar-Como-Escolher.png",
     cargo:"ANALISTA DBA",
     resumo:"Administra servidores de bancos de dados de produção. Identifica riscos de atrasos nos trabalhos. Presta suporte aos usuários, orienta analistas e desenvolvedores na otimização de performance das aplicações referente a área de banco de dados."
 },
 {
     nome:"Maiky Guilherme",
-    img:"/img/homemtrabalhando.jpg",
+    img:"https://thumbs.dreamstime.com/b/hacker-de-computador-encapu%C3%A7ado-que-rouba-informa%C3%A7%C3%A3o-com-o-pc-no-fundo-da-sala-escura-114047971.jpg",
     cargo:"DESENVOLVEDOR C#",
     resumo:"Desenvolvem sistemas e aplicações, determinando interface gráfica, critérios ergonômicos de navegação, montagem da estrutura de banco de dados e codificação de programas; projetam, implantam e realizam manutenção de sistemas e aplicações."
 },
 {
     nome:"Candido Alencar",
-    img:"/img/homemlaptop.jpg",
+    img:"https://img.freepik.com/fotos-gratis/atendimento-ao-cliente-morena-bonitinha-em-terno-de-escritorio-com-computador-e-fone-de-ouvido-sorrindo-alegremente_140725-163862.jpg?w=2000",
     cargo:"DEVOPS JR",
     resumo:"A automação deve ser utilizada de forma inteligente, sendo criada por pessoas e sustentada por processos e pela cultura da empresa. Entretanto, as práticas de DevOps dependem significativamente da automação para garantir entregas frequentes e oportunas entre as plataformas."
 }
@@ -27,20 +27,36 @@ let pessoas = [{
 let nome = document.querySelector('.nome')
 let cargo = document.querySelector('.cargo')
 let resumo = document.querySelector('.resumo')
+let imag = document.querySelector('imagem')
 
 let btnEsquerda = document.getElementById('esquerda')
 let btnDireita = document.getElementById('direita')
 
 btnDireita.addEventListener('click', function(){
-
-    for(let i = 0; i < pessoas.length; i++)
-    console.log(pessoas[0].nome)
-
-    nome.textContent = pessoas[1].nome
-    // cargo.textContent = pessoa[2]
-    // resumo.textContent = pessoa[3]
+    pegaDados()
 })
 
+function pegaDados(){
+    pessoas.forEach((pessoaAtual) => {
+    nome.textContent = pessoaAtual.nome
+    cargo.textContent = pessoaAtual.cargo
+    resumo.textContent = pessoaAtual.resumo
+
+    console.log(pessoaAtual.nome)
+    console.log(pessoaAtual.cargo)
+     })
+}
+
+   // let pessoa = '';
+
+    // for(let i = 0; i < 4; i++)
+    // console.log(pessoas[i].nome)
+
+    // pessoa += pessoas[pegaDados()]
+
+    // nome.textContent = pessoas[i].nome
+    // cargo.textContent = pessoas[i].cargo
+    // resumo.textContent = pessoas[i].resumo
 
 /* Tratados no site = 
 objetos
