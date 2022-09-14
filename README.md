@@ -1,6 +1,6 @@
 <h1> Criando um carrossel de review com JavaScript puro </h1>
 
-<h3> Link linkedin do vídeo: https://www.linkedin.com/feed/update/urn:li:activity:6975808631539666944/ </h3>
+<h3> Link do linkedin: https://www.linkedin.com/feed/update/urn:li:activity:6975808631539666944/ </h3>
 
 <h1> Utilizado no projeto:</h1>
 <ul>
