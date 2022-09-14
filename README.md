@@ -4,14 +4,14 @@
 
 <h1> Utilizado no site:<h1>
 <ul>
-<li>Objeto
-DOMContentLoaded<li>
-<li>addEventListener()<li>
-<li>array.length<li>
-<li>textContent<li>
-<ul>
+  <li>Objeto</li>
+  <li>DOMContentLoaded</li>
+  <li>addEventListener()</li>
+  <li>array.length</li>
+  <li>textContent</li>
+</ul>
 
 <h2> Utilizado objeto e eventos <h2>
 
 ![alt-text](https://github.com/wevertonsantos/carrossel-Review/blob/main/review.png)
-![Vídeo](https://github.com/wevertonsantos/carrossel-Review/blob/main/projetoreview.wmv)
+[Vídeo](https://github.com/wevertonsantos/carrossel-Review/blob/main/projetoreview.wmv)
