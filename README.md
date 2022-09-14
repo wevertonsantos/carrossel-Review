@@ -2,7 +2,7 @@
 
 <h1> Link linkedin do vídeo: https://www.linkedin.com/feed/update/urn:li:activity:6975808631539666944/ <h1>
 
-<h1> Utilizado no site:<h1>
+<h1> Utilizado no projeto:<h1>
 <ul>
   <li>Objeto</li>
   <li>DOMContentLoaded</li>
