@@ -4,8 +4,8 @@
 
 <h1> Utilizado no site:<h1>
 <ul>
-<li>Objeto<li>
-<li>DOMContentLoaded<li>
+<li>Objeto
+DOMContentLoaded<li>
 <li>addEventListener()<li>
 <li>array.length<li>
 <li>textContent<li>
