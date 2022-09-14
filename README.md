@@ -11,7 +11,5 @@
   <li>textContent</li>
 </ul>
 
-<h2> Utilizado objeto e eventos <h2>
-
 ![alt-text](https://github.com/wevertonsantos/carrossel-Review/blob/main/review.png)
 [Vídeo](https://github.com/wevertonsantos/carrossel-Review/blob/main/projetoreview.wmv)
