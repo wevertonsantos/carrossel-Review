@@ -1,3 +1,5 @@
+// Pessoas a serem mostradas (review)
+
 let pessoas = [{
     nome:"Amanda Silverio",
     img:"https://thumbs.dreamstime.com/b/uma-mulher-trabalhando-com-computador-para-projetar-e-programar-mulheres-157948365.jpg",
@@ -24,42 +26,50 @@ let pessoas = [{
 }
 ]
 
+// Selecionando itens
+
 let nome = document.querySelector('.nome')
 let cargo = document.querySelector('.cargo')
 let resumo = document.querySelector('.resumo')
-let imag = document.querySelector('imagem')
+let img = document.getElementById('imagem')
 
 let btnEsquerda = document.getElementById('esquerda')
 let btnDireita = document.getElementById('direita')
+let btnSurpresa = document.getElementById('surpresa')
 
-btnDireita.addEventListener('click', function(){
-    pegaDados()
-})
+// Item inicial
 
-function pegaDados(){
-    pessoas.forEach((pessoaAtual, indice) => {
-    
-        console.log(indice)
-    if(indice == 1){
-        nome.textContent = pessoaAtual.nome
-        cargo.textContent = pessoaAtual.cargo
-        resumo.textContent = pessoaAtual.resumo
-        }
+let itemInicial = 0;
+
+// Carregando item 
+
+addEventListener('DOMContentLoaded',function(){
+    const pessoa = pessoas[itemInicial]
+    img.src = pessoa.img
+    nome.textContent = pessoa.nome
+    cargo.textContent = pessoa.cargo
+    resumo.textContent = pessoa.resumo
+
+    btnDireita.addEventListener('click', function(){
+        pessoas[mostrarDados()]
+        console.log(itemInicial++)
     })
-}    
 
-function pegaDados1(){
-    let i = 0
+    console.log(pessoa)
+    console.log(itemInicial++)
 
-    while(i < pessoas.length){
-        i++
+    function mostrarDados(){
+        for(let i = 0; ; i++){
+            console.log(i)
+        }
+
     }
 
-    nome.textContent = pessoas[1].nome
-    nome.textContent = pessoas[2].nome
+})
 
-}
-
+// nome.textContent = pessoaAtual.nome
+// cargo.textContent = pessoaAtual.cargo
+// resumo.textContent = pessoaAtual.resumo
 
    // let pessoa = '';
 
