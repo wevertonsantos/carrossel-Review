@@ -84,21 +84,6 @@ btnSurpresa.addEventListener('click', function(){
    mostrarDados(itemInicial)
 })
 
-// nome.textContent = pessoaAtual.nome
-// cargo.textContent = pessoaAtual.cargo
-// resumo.textContent = pessoaAtual.resumo
-
-   // let pessoa = '';
-
-    // for(let i = 0; i < 4; i++)
-    // console.log(pessoas[i].nome)
-
-    // pessoa += pessoas[pegaDados()]
-
-    // nome.textContent = pessoas[i].nome
-    // cargo.textContent = pessoas[i].cargo
-    // resumo.textContent = pessoas[i].resumo
-
 /* Tratados no site = 
 objetos
 DOMContentLoaded
