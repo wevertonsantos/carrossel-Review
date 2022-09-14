@@ -44,27 +44,37 @@ let itemInicial = 0;
 // Carregando item 
 
 addEventListener('DOMContentLoaded',function(){
-    const pessoa = pessoas[itemInicial]
-    img.src = pessoa.img
-    nome.textContent = pessoa.nome
-    cargo.textContent = pessoa.cargo
-    resumo.textContent = pessoa.resumo
+       mostrarDados(itemInicial)
+})
 
-    btnDireita.addEventListener('click', function(){
-        pessoas[mostrarDados()]
-        console.log(itemInicial++)
-    })
+// Função de mostrar a pessoa
 
-    console.log(pessoa)
-    console.log(itemInicial++)
+function mostrarDados(pessoa){
+    const item = pessoas[pessoa]
+    img.src = item.img
+    nome.textContent = item.nome
+    cargo.textContent = item.cargo
+    resumo.textContent = item.resumo    
+}
 
-    function mostrarDados(){
-        for(let i = 0; ; i++){
-            console.log(i)
-        }
+// Mostrar proxima pessoa
 
+btnDireita.addEventListener('click', function(){
+    itemInicial++
+    if(itemInicial > pessoas.length - 1){
+        itemInicial = 0
     }
+    mostrarDados(itemInicial)
+})
 
+// Mostrar pessoa anterior
+
+btnEsquerda.addEventListener('click', function(){
+    itemInicial--
+    if(itemInicial < 0){
+        itemInicial = pessoas.length - 1
+    }
+    mostrarDados(itemInicial)
 })
 
 // nome.textContent = pessoaAtual.nome
