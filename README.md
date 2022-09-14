@@ -12,4 +12,4 @@
 </ul>
 
 ![alt-text](https://github.com/wevertonsantos/carrossel-Review/blob/main/review.png)
-[Vídeo](https://github.com/wevertonsantos/carrossel-Review/blob/main/projetoreview.wmv)
+![Vídeo](https://github.com/wevertonsantos/carrossel-Review/blob/main/projetoreview.wmv)
