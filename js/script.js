@@ -77,6 +77,13 @@ btnEsquerda.addEventListener('click', function(){
     mostrarDados(itemInicial)
 })
 
+// Mostrar pessoas surpresa
+
+btnSurpresa.addEventListener('click', function(){
+   itemInicial = Math.floor(Math.random() * pessoas.length)
+   mostrarDados(itemInicial)
+})
+
 // nome.textContent = pessoaAtual.nome
 // cargo.textContent = pessoaAtual.cargo
 // resumo.textContent = pessoaAtual.resumo
